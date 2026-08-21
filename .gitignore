@@ -1,0 +1,13 @@
+.build/
+*.app
+.DS_Store
+.DS_Store?
+xcuserdata/
+
+# git worktree 本地工作目录（由 /worktree 技能管理）
+.worktrees/
+
+# Android mobile module local/generated files
+mobile/local.properties
+mobile/.gradle/
+mobile/app/build/

@@ -1,0 +1,50 @@
+name: Bug 报告
+description: 报告可以稳定复现的问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请删除日志中的推流地址、密钥、录制内容和个人信息后再提交。
+  - type: input
+    id: version
+    attributes:
+      label: 开讲版本
+      placeholder: 例如 0.2.0 (2)
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 系统与设备
+      placeholder: 例如 macOS 14.6 / MacBook Pro M2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: 按顺序描述操作和使用的来源类型
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果与必要日志
+      description: 只粘贴相关片段，请先移除隐私和密钥。
+    validations:
+      required: true
+  - type: checkboxes
+    id: license
+    attributes:
+      label: 使用确认
+      options:
+        - label: 本次使用和反馈属于许可证允许的非商业用途。
+          required: true

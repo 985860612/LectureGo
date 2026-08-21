@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">开讲 LectureGo 应用图标</title>
+  <desc id="desc">三个叠放的画面代表多源输入，红点代表录制</desc>
+  <rect x="32" y="32" width="960" height="960" rx="214" fill="#f7f7f8"/>
+  <rect x="190" y="214" width="520" height="408" rx="60" fill="#d9dce0"/>
+  <rect x="252" y="276" width="520" height="408" rx="60" fill="#8c9198"/>
+  <rect x="314" y="338" width="520" height="408" rx="60" fill="#222428"/>
+  <circle cx="758" cy="414" r="38" fill="#ff3b42"/>
+</svg>
