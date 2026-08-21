@@ -17,6 +17,10 @@
 
 开讲是一套 macOS + Android 多源课程录制工具：按需添加屏幕、窗口、摄像头、局域网移动端、RTMP 和麦克风，一键得到合成成片、混音与各来源独立文件。Android 发送端作为 `mobile/` 独立模块随仓库维护。
 
+<p align="center">
+  <img src="docs/app-overview.webp" width="100%" alt="开讲 LectureGo 真实软件界面">
+</p>
+
 ## 快速开始
 
 环境要求：macOS 14 或以上、Swift 5.9 或以上；构建移动端还需要 JDK 17 和 Android SDK。

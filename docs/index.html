@@ -8,6 +8,7 @@
   <meta property="og:title" content="开讲 LectureGo">
   <meta property="og:description" content="多源课程录制工作台">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://985860612.github.io/LectureGo/app-overview.webp">
   <title>开讲 LectureGo · 多源课程录制工作台</title>
   <link rel="icon" href="lecturego-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -38,31 +39,12 @@
         </div>
         <p class="license-note">源码公开，仅允许非商业使用。</p>
       </div>
-      <div class="source-stage" aria-label="多源录制示意图">
-        <div class="stage-header">
-          <span>输出监看</span>
-          <span class="record-state"><i></i> 多源录制</span>
-        </div>
-        <div class="stage-canvas">
-          <div class="screen-source source-box">
-            <span class="source-label">屏幕</span>
-            <div class="window-line wide"></div>
-            <div class="window-line"></div>
-            <div class="window-columns"><i></i><i></i><i></i></div>
-          </div>
-          <div class="camera-source source-box">
-            <span class="source-label">摄像头</span>
-            <span class="person"><i></i><b></b></span>
-          </div>
-          <div class="mobile-source source-box">
-            <span class="source-label">移动端</span>
-            <span class="phone"><i></i></span>
-          </div>
-        </div>
-        <div class="stage-tracks">
-          <span>成片.mov</span><span>屏幕 ISO</span><span>摄像头 ISO</span><span>独立音轨</span>
-        </div>
-      </div>
+      <figure class="app-preview">
+        <a href="app-overview.webp" aria-label="查看开讲完整软件截图">
+          <img src="app-overview.webp" width="2000" height="1539" alt="开讲真实软件界面，左侧为输入来源，中间为输出监看，右侧为场景与图层" fetchpriority="high">
+        </a>
+        <figcaption>真实运行界面 · 竖屏课程录制场景</figcaption>
+      </figure>
     </section>
 
     <section class="stats" aria-label="产品能力概览">
@@ -70,6 +52,28 @@
       <div><strong>4K / 60</strong><span>最高输出规格</span></div>
       <div><strong>ISO</strong><span>来源独立录制</span></div>
       <div><strong>Resolve</strong><span>多轨时间线导出</span></div>
+    </section>
+
+    <section id="screenshots" class="screenshots content-section">
+      <div class="section-heading">
+        <p class="eyebrow">真实软件界面</p>
+        <h2>输入与输出都看得见</h2>
+        <p>从来源接入到输出参数，所有操作集中在同一个课程录制工作台。</p>
+      </div>
+      <div class="screenshot-grid">
+        <figure>
+          <a href="app-add-source.webp" aria-label="查看添加来源界面大图">
+            <img src="app-add-source.webp" width="2000" height="1539" alt="开讲添加来源界面，可选择屏幕、窗口、摄像头、移动端、RTMP 和麦克风" loading="lazy">
+          </a>
+          <figcaption><strong>添加来源</strong><span>统一选择屏幕、窗口、摄像头、移动端、RTMP 和麦克风。</span></figcaption>
+        </figure>
+        <figure>
+          <a href="app-output-settings.webp" aria-label="查看输出设置界面大图">
+            <img src="app-output-settings.webp" width="2000" height="1539" alt="开讲输出设置界面，可设置方向、分辨率、帧率、编码和码率" loading="lazy">
+          </a>
+          <figcaption><strong>输出设置</strong><span>横屏或竖屏、分辨率、帧率、编码与码率统一维护。</span></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="features" class="content-section">

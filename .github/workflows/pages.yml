@@ -26,6 +26,7 @@ jobs:
         run: |
           mkdir -p _site/support
           cp docs/index.html docs/styles.css _site/
+          cp docs/app-*.webp _site/
           cp Resources/LectureGoMark.svg _site/lecturego-mark.svg
           cp Resources/Support/*.jpg _site/support/
           touch _site/.nojekyll
