@@ -3,15 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="开讲 LectureGo 是一款面向课程录制的 macOS 多源录制工作台，支持屏幕、窗口、摄像头、移动端、RTMP 与麦克风。">
+  <meta name="description" content="开讲 LectureGo 是 macOS 多源课程录制与分轨录制软件。屏幕、摄像头、移动端、RTMP 和麦克风独立成轨，同时生成成片、视频 ISO、独立音轨及 DaVinci Resolve 时间线，完整保留后期空间。">
+  <meta name="keywords" content="课程录制软件,多源录制,分轨录制,独立轨道录制,macOS录屏,视频ISO录制,独立音轨,摄像头录制,手机投屏录制,RTMP录制,DaVinci Resolve,课程视频后期,LectureGo,开讲">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#ff3b42">
-  <meta property="og:title" content="开讲 LectureGo">
-  <meta property="og:description" content="多源课程录制工作台">
+  <meta property="og:title" content="开讲 LectureGo · 多源分轨课程录制软件">
+  <meta property="og:description" content="每路视频与声音独立成轨，同时生成成片和 DaVinci Resolve 时间线，完整保留后期空间。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://985860612.github.io/LectureGo/">
+  <meta property="og:site_name" content="开讲 LectureGo">
+  <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://985860612.github.io/LectureGo/app-overview.webp">
-  <title>开讲 LectureGo · 多源课程录制工作台</title>
+  <meta property="og:image:alt" content="开讲 LectureGo 多源分轨课程录制界面">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="开讲 LectureGo · 多源分轨课程录制软件">
+  <meta name="twitter:description" content="视频 ISO、独立音轨和 Resolve 时间线同步生成，完整保留课程后期空间。">
+  <meta name="twitter:image" content="https://985860612.github.io/LectureGo/app-overview.webp">
+  <title>开讲 LectureGo｜多源分轨课程录制软件 · 独立轨道完整后期</title>
+  <link rel="canonical" href="https://985860612.github.io/LectureGo/">
   <link rel="icon" href="lecturego-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "开讲 LectureGo",
+    "alternateName": "LectureGo",
+    "url": "https://985860612.github.io/LectureGo/",
+    "image": "https://985860612.github.io/LectureGo/app-overview.webp",
+    "description": "macOS 多源课程录制与分轨录制软件，同时生成成片、视频 ISO、独立音轨和 DaVinci Resolve 时间线。",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "macOS 14 or later; Android companion",
+    "softwareRequirements": "macOS 14 or later, Swift 5.9 or later",
+    "license": "https://github.com/985860612/LectureGo/blob/main/LICENSE",
+    "author": {
+      "@type": "Person",
+      "name": "Wang Xiaojie"
+    },
+    "featureList": [
+      "屏幕、窗口、摄像头、移动端、RTMP 和麦克风多源录制",
+      "每路视频来源独立 ISO 文件",
+      "系统声与麦克风独立音轨",
+      "合成成片与独立轨道同步录制",
+      "DaVinci Resolve XML 与 OTIO 多轨时间线导出"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -21,6 +58,7 @@
     </a>
     <nav aria-label="主导航">
       <a href="#features">功能</a>
+      <a href="#tutorial">教程</a>
       <a href="#start">开始使用</a>
       <a href="#support">联系</a>
       <a class="nav-source" href="https://github.com/985860612/LectureGo">查看源码</a>
@@ -30,11 +68,11 @@
   <main id="top">
     <section class="hero section-grid">
       <div class="hero-copy">
-        <p class="eyebrow">macOS + Android</p>
-        <h1>把每一路画面，<br>都认真录下来。</h1>
-        <p class="lead">屏幕、窗口、摄像头、移动端、RTMP 和麦克风统一接入。实时编排画面，一次录制同时得到成片与各来源独立文件。</p>
+        <p class="eyebrow">多源录制 · 独立轨道</p>
+        <h1>每一路独立成轨，<br>完整留给后期。</h1>
+        <p class="lead">屏幕、窗口、摄像头、移动端、RTMP 和麦克风统一接入。实时生成成片的同时，为每路视频保留 ISO 文件、为每路声音保留独立音轨。</p>
         <div class="actions">
-          <a class="button primary" href="#start">开始使用</a>
+          <a class="button primary" href="#tutorial">查看使用教程</a>
           <a class="button secondary" href="https://github.com/985860612/LectureGo">GitHub 源码</a>
         </div>
         <p class="license-note">源码公开，仅允许非商业使用。</p>
@@ -49,9 +87,34 @@
 
     <section class="stats" aria-label="产品能力概览">
       <div><strong>6 类</strong><span>输入来源</span></div>
-      <div><strong>4K / 60</strong><span>最高输出规格</span></div>
-      <div><strong>ISO</strong><span>来源独立录制</span></div>
-      <div><strong>Resolve</strong><span>多轨时间线导出</span></div>
+      <div><strong>Video ISO</strong><span>每路视频独立文件</span></div>
+      <div><strong>Audio Tracks</strong><span>每路声音独立音轨</span></div>
+      <div><strong>Resolve</strong><span>XML / OTIO 多轨时间线</span></div>
+    </section>
+
+    <section id="post-production" class="post-section content-section">
+      <div class="post-copy">
+        <p class="eyebrow">完整后期空间</p>
+        <h2>录制时合成，后期仍然自由</h2>
+        <p>成片方便立即交付，独立轨道保留重新剪辑的全部可能。每个画面可以单独裁切、调色和替换，每路声音可以独立降噪、混音和调整音量。</p>
+        <ul>
+          <li>视频来源分别保存为 ISO 文件，不被成片布局裁死</li>
+          <li>系统声与每支麦克风分开保存，后期可以单独处理</li>
+          <li>录制标记、素材和轨道自动写入 Resolve 时间线</li>
+        </ul>
+      </div>
+      <div class="track-board" aria-label="独立轨道输出示意">
+        <div class="track-head"><span>来源</span><span>独立文件</span><span>轨道</span></div>
+        <div class="track-row"><b>屏幕 1</b><code>01-屏幕 1-ISO.mov</code><em>V1</em></div>
+        <div class="track-row"><b>摄像头 1</b><code>02-摄像头 1-ISO.mov</code><em>V2</em></div>
+        <div class="track-row"><b>系统声音</b><code>01-屏幕 1-系统声.m4a</code><em>A1</em></div>
+        <div class="track-row"><b>麦克风 1</b><code>03-麦克风 1-人声.m4a</code><em>A2</em></div>
+        <div class="track-result">
+          <strong>成片.mov</strong>
+          <span>+</span>
+          <strong>课录.xml / 课录.otio</strong>
+        </div>
+      </div>
     </section>
 
     <section id="screenshots" class="screenshots content-section">
@@ -95,27 +158,34 @@
         </article>
         <article>
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 6h22v6H5zM5 15h22v5H5zM5 23h22v4H5z"/><path d="M10 6v6M20 15v5M15 23v4" class="accent"/></svg>
-          <h3>成片与分轨同录</h3>
-          <p>一次录制得到合成成片、视频 ISO、独立音轨和可恢复的录制报告。</p>
+          <h3>成片与独立轨道同录</h3>
+          <p>合成成片、每路视频 ISO、每路声音独立音轨一次同步完成。</p>
         </article>
         <article>
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v22H5zM10 10h12v4H10zM10 18h5v4h-5zM18 18h4v4h-4z"/><path d="M25 4v6h-6" class="accent"/></svg>
-          <h3>直接进入后期</h3>
-          <p>导出 DaVinci Resolve XML 与 OTIO 多轨时间线，来源和录制标记自动对齐。</p>
+          <h3>完整进入后期</h3>
+          <p>导出 DaVinci Resolve XML 与 OTIO 多轨时间线，素材、轨道和录制标记自动对齐。</p>
         </article>
       </div>
     </section>
 
-    <section class="workflow content-section">
+    <section id="tutorial" class="tutorial content-section">
       <div class="section-heading">
-        <p class="eyebrow">清晰的工作流</p>
-        <h2>三步完成一堂课</h2>
+        <p class="eyebrow">使用教程</p>
+        <h2>五步完成多源分轨录制</h2>
+        <p>从接入画面到进入 DaVinci Resolve 后期，第一次使用也能按顺序完成。</p>
       </div>
-      <ol>
-        <li><span>01</span><div><h3>添加来源</h3><p>选择要录制的设备和画面。</p></div></li>
-        <li><span>02</span><div><h3>编排场景</h3><p>调整布局，保存课程常用场景。</p></div></li>
-        <li><span>03</span><div><h3>开始录制</h3><p>同步生成成片、独立素材和时间线。</p></div></li>
+      <ol class="tutorial-steps">
+        <li><span>01</span><div><h3>添加录制来源</h3><p>点击来源栏右侧“添加”，选择屏幕、窗口、摄像头、移动端、外部 RTMP 或麦克风。移动端与 Mac 保持在同一局域网即可发现。</p></div></li>
+        <li><span>02</span><div><h3>加入输出并编排场景</h3><p>把需要出现在成片中的视频加入输出图层，拖动调整位置和大小，或直接套用全屏、画中画、分栏布局。</p></div></li>
+        <li><span>03</span><div><h3>开启独立轨道</h3><p>在每个视频或音频来源卡片上启用“录制独立文件”。成片布局只影响合成画面，不会破坏各来源的完整素材。</p></div></li>
+        <li><span>04</span><div><h3>设置输出并开始录制</h3><p>在底栏打开输出设置，选择横屏或竖屏、分辨率、帧率、编码和码率。确认磁盘空间后点击“开始录制”。</p></div></li>
+        <li><span>05</span><div><h3>导入 DaVinci Resolve</h3><p>录制结束后，在 Resolve 选择“文件 → 导入 → 时间线”。18.1–18.4 使用 <code>课录.xml</code>，18.5 及以上优先使用 <code>课录.otio</code>。</p></div></li>
       </ol>
+      <div class="tutorial-output">
+        <strong>录制结果</strong>
+        <span>成片 + 视频 ISO + 独立音轨 + Resolve 多轨时间线 + 录制报告</span>
+      </div>
     </section>
 
     <section id="start" class="start-section content-section">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://985860612.github.io/LectureGo/sitemap.xml
