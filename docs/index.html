@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="开讲 LectureGo 是 macOS 多源课程录制与分轨录制软件。屏幕、摄像头、移动端、RTMP 和麦克风独立成轨，同时生成成片、视频 ISO、独立音轨及 DaVinci Resolve 时间线，完整保留后期空间。">
-  <meta name="keywords" content="课程录制软件,多源录制,分轨录制,独立轨道录制,macOS录屏,视频ISO录制,独立音轨,摄像头录制,手机投屏录制,RTMP录制,DaVinci Resolve,课程视频后期,LectureGo,开讲">
+  <meta name="description" content="开讲 LectureGo 是 macOS 多源课程录制与独立分轨录制软件。同步录制屏幕、摄像头、Android 手机、RTMP 和麦克风，输出成片、视频 ISO、独立音轨及 DaVinci Resolve 多轨时间线，完整保留后期空间。">
+  <meta name="keywords" content="课程录制软件,录课软件,多源录制,多机位课程录制,分轨录制,独立轨道录制,macOS录屏,视频ISO录制,独立音轨,摄像头录制,安卓手机摄像头,RTMP录制,DaVinci Resolve,达芬奇多轨剪辑,课程视频后期,LectureGo,开讲">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#ff3b42">
   <meta property="og:title" content="开讲 LectureGo · 多源分轨课程录制软件">
@@ -13,6 +13,7 @@
   <meta property="og:url" content="https://985860612.github.io/LectureGo/">
   <meta property="og:site_name" content="开讲 LectureGo">
   <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:image" content="https://985860612.github.io/LectureGo/app-overview.webp">
   <meta property="og:image:alt" content="开讲 LectureGo 多源分轨课程录制界面">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,31 +22,52 @@
   <meta name="twitter:image" content="https://985860612.github.io/LectureGo/app-overview.webp">
   <title>开讲 LectureGo｜多源分轨课程录制软件 · 独立轨道完整后期</title>
   <link rel="canonical" href="https://985860612.github.io/LectureGo/">
+  <link rel="alternate" hreflang="zh-CN" href="https://985860612.github.io/LectureGo/">
+  <link rel="alternate" hreflang="en" href="https://985860612.github.io/LectureGo/en/">
+  <link rel="alternate" hreflang="x-default" href="https://985860612.github.io/LectureGo/">
   <link rel="icon" href="lecturego-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "开讲 LectureGo",
-    "alternateName": "LectureGo",
-    "url": "https://985860612.github.io/LectureGo/",
-    "image": "https://985860612.github.io/LectureGo/app-overview.webp",
-    "description": "macOS 多源课程录制与分轨录制软件，同时生成成片、视频 ISO、独立音轨和 DaVinci Resolve 时间线。",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "macOS 14 or later; Android companion",
-    "softwareRequirements": "macOS 14 or later, Swift 5.9 or later",
-    "license": "https://github.com/985860612/LectureGo/blob/main/LICENSE",
-    "author": {
-      "@type": "Person",
-      "name": "Wang Xiaojie"
-    },
-    "featureList": [
-      "屏幕、窗口、摄像头、移动端、RTMP 和麦克风多源录制",
-      "每路视频来源独立 ISO 文件",
-      "系统声与麦克风独立音轨",
-      "合成成片与独立轨道同步录制",
-      "DaVinci Resolve XML 与 OTIO 多轨时间线导出"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://985860612.github.io/LectureGo/#website",
+        "url": "https://985860612.github.io/LectureGo/",
+        "name": "开讲 LectureGo",
+        "alternateName": "LectureGo",
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://985860612.github.io/LectureGo/#software",
+        "name": "开讲 LectureGo",
+        "alternateName": "LectureGo",
+        "url": "https://985860612.github.io/LectureGo/",
+        "sameAs": "https://github.com/985860612/LectureGo",
+        "downloadUrl": "https://github.com/985860612/LectureGo/releases/latest",
+        "softwareVersion": "0.1.0",
+        "image": "https://985860612.github.io/LectureGo/app-overview.webp",
+        "description": "macOS 多源课程录制与独立分轨录制软件，同时生成成片、视频 ISO、独立音轨和 DaVinci Resolve 多轨时间线。",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "macOS 14 or later; Android 10 or later companion",
+        "softwareRequirements": "macOS 14 or later",
+        "isAccessibleForFree": true,
+        "inLanguage": "zh-CN",
+        "license": "https://github.com/985860612/LectureGo/blob/main/LICENSE",
+        "author": {
+          "@type": "Person",
+          "name": "Wang Xiaojie"
+        },
+        "featureList": [
+          "屏幕、窗口、摄像头、Android 移动端、RTMP 和麦克风多源录制",
+          "每路视频来源独立 ISO 文件",
+          "系统声与麦克风独立音轨",
+          "合成成片与独立轨道同步录制",
+          "DaVinci Resolve XML 与 OTIO 多轨时间线导出"
+        ]
+      }
     ]
   }
   </script>
@@ -61,6 +83,7 @@
       <a href="#tutorial">教程</a>
       <a href="#start">开始使用</a>
       <a href="#support">联系</a>
+      <a class="language-link" href="en/" lang="en" hreflang="en" aria-label="View this page in English">EN</a>
       <a class="nav-source" href="https://github.com/985860612/LectureGo">查看源码</a>
     </nav>
   </header>
@@ -103,7 +126,7 @@
           <li>录制标记、素材和轨道自动写入 Resolve 时间线</li>
         </ul>
       </div>
-      <div class="track-board" aria-label="独立轨道输出示意">
+      <div class="track-board" role="group" aria-label="独立轨道输出示意">
         <div class="track-head"><span>来源</span><span>独立文件</span><span>轨道</span></div>
         <div class="track-row"><b>屏幕 1</b><code>01-屏幕 1-ISO.mov</code><em>V1</em></div>
         <div class="track-row"><b>摄像头 1</b><code>02-摄像头 1-ISO.mov</code><em>V2</em></div>
@@ -194,9 +217,9 @@
         <h2>在 macOS 上构建开讲</h2>
         <p>需要 macOS 14+ 与 Swift 5.9+。首次运行请授权屏幕录制、摄像头、麦克风和局域网访问。</p>
       </div>
-      <div class="terminal" aria-label="构建命令">
+      <section class="terminal" aria-label="构建命令">
         <code><span>git clone</span> https://github.com/985860612/LectureGo.git<br><span>cd</span> LectureGo<br><span>./scripts/build-app.sh</span><br><span>open</span> CourseRec.app</code>
-      </div>
+      </section>
       <div class="actions">
         <a class="button primary" href="https://github.com/985860612/LectureGo#快速开始">查看完整说明</a>
         <a class="button secondary" href="https://github.com/985860612/LectureGo/issues">反馈问题</a>

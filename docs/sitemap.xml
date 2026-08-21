@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://985860612.github.io/LectureGo/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://985860612.github.io/LectureGo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://985860612.github.io/LectureGo/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://985860612.github.io/LectureGo/" />
     <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://985860612.github.io/LectureGo/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://985860612.github.io/LectureGo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://985860612.github.io/LectureGo/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://985860612.github.io/LectureGo/" />
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

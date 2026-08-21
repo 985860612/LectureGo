@@ -25,9 +25,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site/support
-          cp docs/index.html docs/styles.css _site/
-          cp docs/robots.txt docs/sitemap.xml _site/
-          cp docs/app-*.webp _site/
+          cp -R docs/. _site/
           cp Resources/LectureGoMark.svg _site/lecturego-mark.svg
           cp Resources/Support/*.jpg _site/support/
           touch _site/.nojekyll
@@ -38,3 +36,20 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Notify IndexNow
+        continue-on-error: true
+        timeout-minutes: 2
+        run: |
+          curl --fail-with-body --max-time 20 --retry 2 \
+            --header 'Content-Type: application/json; charset=utf-8' \
+            --data '{
+              "host": "985860612.github.io",
+              "key": "c9abccc82da521a68567bdf475c1fbe8",
+              "keyLocation": "https://985860612.github.io/LectureGo/c9abccc82da521a68567bdf475c1fbe8.txt",
+              "urlList": [
+                "https://985860612.github.io/LectureGo/",
+                "https://985860612.github.io/LectureGo/en/",
+                "https://985860612.github.io/LectureGo/sitemap.xml"
+              ]
+            }' \
+            https://api.indexnow.org/indexnow
