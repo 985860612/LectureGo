@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="开讲 LectureGo 公众号文章排版预览：多源课程录制、独立视频 ISO、独立音轨和 DaVinci Resolve 多轨后期。">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#ff3b42">
+  <title>开讲 LectureGo｜公众号文章排版预览</title>
+  <link rel="canonical" href="https://985860612.github.io/LectureGo/">
+  <style>
+    * { box-sizing: border-box; }
+    html { background: #f5f6f7; }
+    body { margin: 0; color: #202124; background: #f5f6f7; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    img { display: block; max-width: 100%; }
+    @media (max-width: 720px) {
+      body { background: #fff; }
+      #copy-bar { margin: 0 !important; border-width: 0 0 1px !important; }
+      #wechat-article { padding: 32px 18px 48px !important; }
+    }
+  </style>
+</head>
+<body>
+  <aside id="copy-bar" style="display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;max-width:677px;margin:18px auto;padding:12px 14px;border:1px solid #dfe1e5;border-radius:4px;background:#ffffff;">
+    <div>
+      <strong style="display:block;color:#202124;font-size:14px;">公众号排版预览</strong>
+      <span id="copy-status" role="status" style="display:block;margin-top:2px;color:#9aa0a6;font-size:12px;">复制后粘贴到公众号编辑器</span>
+    </div>
+    <button id="copy-article" type="button" style="display:inline-flex;align-items:center;gap:6px;flex:none;padding:8px 12px;border:1px solid #ff3b42;border-radius:3px;background:#ff3b42;color:#ffffff;font:600 13px/1.2 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer;">
+      <svg viewBox="0 0 16 16" aria-hidden="true" style="width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;"><rect x="5.5" y="5.5" width="8" height="8" rx="1.4"></rect><path d="M2.7 10.4V2.6h7.8"></path></svg>
+      复制公众号正文
+    </button>
+  </aside>
+
+  <article id="wechat-article" style="width:100%;max-width:677px;margin:0 auto;padding:54px 34px 72px;background:#ffffff;color:#202124;font-size:16px;line-height:1.9;">
+    <header style="margin:0 0 36px;padding:0 0 26px;border-bottom:1px solid #dfe1e5;">
+      <p style="margin:0 0 14px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">开讲 LECTUREGO</p>
+      <h1 style="margin:0 0 18px;color:#202124;font-size:36px;line-height:1.28;letter-spacing:-0.035em;">一边录成片，<br>一边留下完整后期空间</h1>
+      <p style="margin:0 0 16px;color:#5f6368;font-size:18px;line-height:1.75;">一个为课程创作者准备的多源录制工作台：屏幕、摄像头、手机、RTMP 和麦克风同时接入，每一路都能独立成轨。</p>
+      <p style="margin:0;color:#9aa0a6;font-size:13px;">开讲 LectureGo · 多源课程录制工作台</p>
+    </header>
+
+    <figure style="margin:0 0 42px;">
+      <img src="https://985860612.github.io/LectureGo/app-overview.webp" alt="开讲 LectureGo 多源课程录制工作台真实界面" style="width:100%;height:auto;border:1px solid #dfe1e5;border-radius:4px;">
+      <figcaption style="margin-top:8px;color:#9aa0a6;font-size:12px;text-align:center;">真实运行界面：来源、输出监看、场景和独立轨道集中在一个工作台</figcaption>
+    </figure>
+
+    <section style="margin:0 0 48px;">
+      <p style="margin:0 0 18px;color:#202124;">做课程视频时，我们经常遇到一个两难：</p>
+      <p style="margin:0 0 18px;color:#5f6368;">直接录成片，效率很高，但镜头位置、画面裁切和声音比例一旦录死，后期就很难再改。</p>
+      <p style="margin:0;color:#5f6368;">分别录屏幕、摄像头和声音，后期空间有了，却要面对多个工具、多份素材和难以对齐的时间线。</p>
+      <blockquote style="margin:28px 0 0;padding:18px 20px;border-left:3px solid #ff3b42;background:#f5f6f7;color:#202124;font-size:18px;font-weight:650;line-height:1.7;">开讲想解决的，就是“快速得到成片”和“完整保留后期”之间的矛盾。</blockquote>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">01 · 多源统一接入</p>
+      <h2 style="margin:0 0 18px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">不是简单录屏，而是课程录制工作台</h2>
+      <p style="margin:0 0 24px;color:#5f6368;">在同一个窗口里，你可以按需要组合多种输入来源：</p>
+      <table role="presentation" style="width:100%;border-collapse:collapse;table-layout:fixed;">
+        <tbody>
+          <tr>
+            <td style="width:50%;padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">屏幕与窗口</td>
+            <td style="width:50%;padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">摄像头</td>
+          </tr>
+          <tr>
+            <td style="padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">Android 移动端</td>
+            <td style="padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">外部 RTMP</td>
+          </tr>
+          <tr>
+            <td style="padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">系统声音</td>
+            <td style="padding:15px 16px;border:1px solid #dfe1e5;color:#202124;font-weight:650;">多个麦克风</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin:18px 0 0;color:#5f6368;">讲师画面、课件、演示设备和声音不再散落在不同软件里，接入后即可统一监看和控制。</p>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">02 · 成片与独立轨道同录</p>
+      <h2 style="margin:0 0 18px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">录制结束，不只有一个视频文件</h2>
+      <p style="margin:0 0 24px;color:#5f6368;">开讲会实时生成当前布局的成片，同时把每一路原始素材独立保存。场景里的裁切和画中画，不会破坏原始画面。</p>
+
+      <div style="margin:0;border:1px solid #dfe1e5;border-radius:4px;overflow:hidden;">
+        <div style="padding:10px 15px;border-bottom:1px solid #dfe1e5;background:#f5f6f7;color:#9aa0a6;font-size:12px;">一次录制得到的内容</div>
+        <div style="padding:15px;border-bottom:1px solid #dfe1e5;">
+          <strong style="display:inline-block;width:32%;color:#202124;font-size:14px;">成片</strong>
+          <span style="color:#5f6368;font-size:13px;">当前场景的合成视频</span>
+        </div>
+        <div style="padding:15px;border-bottom:1px solid #dfe1e5;">
+          <strong style="display:inline-block;width:32%;color:#202124;font-size:14px;">视频 ISO</strong>
+          <span style="color:#5f6368;font-size:13px;">每路画面独立文件</span>
+        </div>
+        <div style="padding:15px;border-bottom:1px solid #dfe1e5;">
+          <strong style="display:inline-block;width:32%;color:#202124;font-size:14px;">独立音轨</strong>
+          <span style="color:#5f6368;font-size:13px;">系统声与麦克风分开保存</span>
+        </div>
+        <div style="padding:15px;">
+          <strong style="display:inline-block;width:32%;color:#202124;font-size:14px;">后期时间线</strong>
+          <span style="color:#5f6368;font-size:13px;">Resolve XML / OTIO</span>
+        </div>
+      </div>
+
+      <p style="margin:22px 0 0;color:#202124;font-weight:650;">成片可以马上交付，独立轨道可以继续精修。</p>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">03 · 场景实时编排</p>
+      <h2 style="margin:0 0 18px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">横屏、竖屏、画中画，录制中也能调整</h2>
+      <p style="margin:0 0 24px;color:#5f6368;">把需要出现在成片里的来源加入输出，拖动改变位置和大小，或者直接套用全屏、画中画、讲解分栏和均分对照布局。</p>
+      <img src="https://985860612.github.io/LectureGo/app-add-source.webp" alt="开讲添加屏幕、窗口、摄像头、移动端、RTMP 和麦克风界面" style="width:100%;height:auto;border:1px solid #dfe1e5;border-radius:4px;">
+      <p style="margin:9px 0 0;color:#9aa0a6;font-size:12px;text-align:center;">添加来源：屏幕、窗口、摄像头、移动端、RTMP 和麦克风</p>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">04 · 完整进入后期</p>
+      <h2 style="margin:0 0 18px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">打开 DaVinci Resolve，素材已经对齐</h2>
+      <p style="margin:0 0 18px;color:#5f6368;">开讲可以导出 DaVinci Resolve XML 与 OTIO 多轨时间线。视频 ISO、独立音轨和录制标记自动放到对应轨道，减少手工导入和对齐素材的重复工作。</p>
+      <p style="margin:0;padding:17px 19px;border:1px solid #dfe1e5;border-radius:4px;color:#5f6368;font-size:14px;">Resolve 18.1–18.4 使用 XML；18.5 及以上优先使用 OTIO。</p>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">05 · 输出参数</p>
+      <h2 style="margin:0 0 18px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">针对不同课程，统一维护输出质量</h2>
+      <p style="margin:0 0 24px;color:#5f6368;">横屏或竖屏、分辨率、帧率、H.264 / HEVC 编码和码率集中设置。开始录制前，工作台还会提示来源实际帧率和预计磁盘占用。</p>
+      <img src="https://985860612.github.io/LectureGo/app-output-settings.webp" alt="开讲输出方向、分辨率、帧率、编码和码率设置界面" style="width:100%;height:auto;border:1px solid #dfe1e5;border-radius:4px;">
+      <p style="margin:9px 0 0;color:#9aa0a6;font-size:12px;text-align:center;">输出设置：方向、分辨率、帧率、编码和码率</p>
+    </section>
+
+    <section style="margin:0 0 50px;padding:26px 22px;border-top:3px solid #ff3b42;background:#f5f6f7;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">适合这些场景</p>
+      <h2 style="margin:0 0 20px;color:#202124;font-size:26px;line-height:1.45;">只想专心讲内容，又不想牺牲后期空间</h2>
+      <p style="margin:0 0 9px;color:#5f6368;">在线课程与知识付费内容</p>
+      <p style="margin:0 0 9px;color:#5f6368;">软件演示与产品教学</p>
+      <p style="margin:0 0 9px;color:#5f6368;">竖屏短课与移动端演示</p>
+      <p style="margin:0 0 9px;color:#5f6368;">访谈、双人讲解与多机位录制</p>
+      <p style="margin:0;color:#5f6368;">需要进入 DaVinci Resolve 精细剪辑的课程项目</p>
+    </section>
+
+    <section style="margin:0 0 50px;">
+      <p style="margin:0 0 10px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">五步开始录制</p>
+      <h2 style="margin:0 0 24px;color:#202124;font-size:28px;line-height:1.4;letter-spacing:-0.025em;">第一次使用，也能顺着完成</h2>
+
+      <div style="margin:0;padding:0 0 18px;border-bottom:1px solid #dfe1e5;">
+        <span style="display:inline-block;margin-right:10px;padding:1px 7px;border-radius:3px;background:#ff3b42;color:#fff;font-size:12px;font-weight:700;">01</span>
+        <strong style="color:#202124;">添加录制来源</strong>
+        <p style="margin:7px 0 0;color:#5f6368;font-size:14px;">选择屏幕、窗口、摄像头、移动端、RTMP 或麦克风。</p>
+      </div>
+      <div style="margin:18px 0 0;padding:0 0 18px;border-bottom:1px solid #dfe1e5;">
+        <span style="display:inline-block;margin-right:10px;padding:1px 7px;border-radius:3px;background:#ff3b42;color:#fff;font-size:12px;font-weight:700;">02</span>
+        <strong style="color:#202124;">编排输出场景</strong>
+        <p style="margin:7px 0 0;color:#5f6368;font-size:14px;">加入输出图层，调整位置和大小，或者套用布局。</p>
+      </div>
+      <div style="margin:18px 0 0;padding:0 0 18px;border-bottom:1px solid #dfe1e5;">
+        <span style="display:inline-block;margin-right:10px;padding:1px 7px;border-radius:3px;background:#ff3b42;color:#fff;font-size:12px;font-weight:700;">03</span>
+        <strong style="color:#202124;">启用独立录制</strong>
+        <p style="margin:7px 0 0;color:#5f6368;font-size:14px;">需要进入后期的画面和声音，分别开启“录制独立文件”。</p>
+      </div>
+      <div style="margin:18px 0 0;padding:0 0 18px;border-bottom:1px solid #dfe1e5;">
+        <span style="display:inline-block;margin-right:10px;padding:1px 7px;border-radius:3px;background:#ff3b42;color:#fff;font-size:12px;font-weight:700;">04</span>
+        <strong style="color:#202124;">设置输出并录制</strong>
+        <p style="margin:7px 0 0;color:#5f6368;font-size:14px;">确认方向、分辨率、帧率、编码、码率和磁盘空间。</p>
+      </div>
+      <div style="margin:18px 0 0;">
+        <span style="display:inline-block;margin-right:10px;padding:1px 7px;border-radius:3px;background:#ff3b42;color:#fff;font-size:12px;font-weight:700;">05</span>
+        <strong style="color:#202124;">交付成片或继续后期</strong>
+        <p style="margin:7px 0 0;color:#5f6368;font-size:14px;">直接使用成片，或把 XML / OTIO 时间线导入 DaVinci Resolve。</p>
+      </div>
+    </section>
+
+    <section style="margin:0 0 42px;padding:28px 22px;border:1px solid #dfe1e5;border-radius:4px;text-align:center;">
+      <p style="margin:0 0 8px;color:#ff3b42;font-size:13px;font-weight:700;letter-spacing:0.12em;">免费下载 · 源码公开</p>
+      <h2 style="margin:0 0 14px;color:#202124;font-size:28px;line-height:1.45;">开讲 LectureGo</h2>
+      <p style="margin:0 0 20px;color:#5f6368;font-size:15px;">支持 macOS 14+，Android 移动端支持 Android 10+。</p>
+      <p style="margin:0 0 8px;color:#202124;font-size:14px;font-weight:650;word-break:break-all;">985860612.github.io/LectureGo/</p>
+      <p style="margin:0;color:#9aa0a6;font-size:12px;">源码按 PolyForm Noncommercial License 1.0.0 提供，仅允许非商业使用。</p>
+    </section>
+
+    <section style="margin:0;text-align:center;">
+      <h2 style="margin:0 0 8px;color:#202124;font-size:24px;line-height:1.5;">联系作者</h2>
+      <p style="margin:0 0 18px;color:#5f6368;font-size:14px;">添加时请备注 LectureGo</p>
+      <img src="https://985860612.github.io/LectureGo/support/wechat-contact.jpg" alt="微信联系开讲 LectureGo 作者二维码" style="width:220px;max-width:72%;height:auto;margin:0 auto;border:1px solid #dfe1e5;border-radius:4px;">
+      <p style="margin:24px 0 0;color:#9aa0a6;font-size:12px;">如果它刚好解决了你的录课问题，欢迎把这篇文章转给同样需要的人。</p>
+    </section>
+  </article>
+
+  <script>
+    const copyButton = document.getElementById('copy-article');
+    const copyStatus = document.getElementById('copy-status');
+    const article = document.getElementById('wechat-article');
+
+    function selectArticle() {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNode(article);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && window.ClipboardItem) {
+          const html = new Blob([article.outerHTML], { type: 'text/html' });
+          const text = new Blob([article.innerText], { type: 'text/plain' });
+          await navigator.clipboard.write([new ClipboardItem({ 'text/html': html, 'text/plain': text })]);
+        } else {
+          selectArticle();
+          if (!document.execCommand('copy')) throw new Error('copy failed');
+          window.getSelection().removeAllRanges();
+        }
+        copyStatus.textContent = '已复制，可粘贴到公众号编辑器';
+      } catch (error) {
+        selectArticle();
+        copyStatus.textContent = '正文已选中，请按 Command/Ctrl + C 复制';
+      }
+    });
+  </script>
+</body>
+</html>
